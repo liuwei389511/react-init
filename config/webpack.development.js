@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resolve, join } = require("path");
 const FriendlyErrorsWebpackPlugin = require("@soda/friendly-errors-webpack-plugin");
 const notifier = require("node-notifier");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 const port = 3003;
 module.exports = {
@@ -46,5 +48,6 @@ module.exports = {
       },
       clearConsole: true,
     }),
+    new BundleAnalyzerPlugin(),
   ],
 };
