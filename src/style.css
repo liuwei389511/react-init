@@ -1,0 +1,18 @@
+/** @format */
+
+html {
+  transition: font-size 0.3s ease-in-out;
+}
+:root {
+  --background: #333;
+  --foreground: #f0f0f0;
+}
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: aqua;
+}
