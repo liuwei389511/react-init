@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 const App = () => {
   return (
     <>
-      <h1 className="text-8xl font-bold  text-[aqua]">Hello World</h1>
+      <h1 className="text-4xl font-bold  text-[aqua]">Hello World !</h1>
     </>
   );
 };
