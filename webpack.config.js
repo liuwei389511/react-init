@@ -38,6 +38,7 @@ const webpackBaseConfig = {
               importLoaders: 1,
             },
           },
+          "postcss-loader",
         ],
       },
     ],
