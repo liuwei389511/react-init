@@ -1,6 +1,6 @@
 /** @format */
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 html {
   transition: font-size 0.3s ease-in-out;

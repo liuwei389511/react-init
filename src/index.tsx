@@ -1,6 +1,6 @@
 /** @format */
-import "./style.css";
-import { createRoot } from "react-dom/client";
+import './style.css';
+import { createRoot } from 'react-dom/client';
 
 const App = () => {
   return (
@@ -9,9 +9,9 @@ const App = () => {
     </>
   );
 };
-const container = document.getElementById("app");
+const container = document.getElementById('app');
 if (!container) {
-  throw new Error("Faild to find the root element");
+  throw new Error('Faild to find the root element');
 }
 
 const root = createRoot(container);

@@ -7,6 +7,7 @@ const _modeConfig = require(`./config/webpack.${_mode}.js`);
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const _modeflag = _mode === "production" ? true : false;
+const { ThemedProgressPlugin } = require("themed-progress-plugin");
 
 const webpackBaseConfig = {
   entry: {
@@ -54,6 +55,7 @@ const webpackBaseConfig = {
         : "styles/[name].css",
       ignoreOrder: false,
     }),
+    new ThemedProgressPlugin(),
   ],
 };
 module.exports = merge.default(webpackBaseConfig, _modeConfig);
