@@ -36,6 +36,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^7.0.0
         version: 7.18.0(eslint@8.57.1)(typescript@5.8.3)
+      '@welldone-software/why-did-you-render':
+        specifier: ^10.0.1
+        version: 10.0.1(react@19.1.0)
       clean-webpack-plugin:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.99.9(@swc/core@1.12.0)(webpack-cli@6.0.1))
@@ -1099,6 +1102,11 @@ packages:
     peerDependenciesMeta:
       webpack-dev-server:
         optional: true
+
+  '@welldone-software/why-did-you-render@10.0.1':
+    resolution: {integrity: sha512-tMgGkt30iVYeLMUKExNmtm019QgyjLtA7lwB0QAizYNEuihlCG2eoAWBBaz/bDeI7LeqAJ9msC6hY3vX+JB97g==}
+    peerDependencies:
+      react: ^19
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -5351,6 +5359,11 @@ snapshots:
       webpack-cli: 6.0.1(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.2)(webpack@5.99.9)
     optionalDependencies:
       webpack-dev-server: 5.2.2(webpack-cli@6.0.1)(webpack@5.99.9)
+
+  '@welldone-software/why-did-you-render@10.0.1(react@19.1.0)':
+    dependencies:
+      lodash: 4.17.21
+      react: 19.1.0
 
   '@xtuc/ieee754@1.2.0': {}
 

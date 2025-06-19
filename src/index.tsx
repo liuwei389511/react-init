@@ -1,14 +1,9 @@
 /** @format */
+import App from './pages/App';
 import './style.css';
+import './wdyr';
 import { createRoot } from 'react-dom/client';
 
-const App = () => {
-  return (
-    <>
-      <h1 className="text-4xl font-bold  text-[aqua]">Hello World !</h1>
-    </>
-  );
-};
 const container = document.getElementById('app');
 if (!container) {
   throw new Error('Faild to find the root element');
